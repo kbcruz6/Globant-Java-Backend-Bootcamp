@@ -28,19 +28,38 @@ public class MascotaApp {
       true,
       "Border Collie"
     );
+    Mascota m3 = new Mascota(
+      "Luisa",
+      "Luisi",
+      "Perro",
+      "Blanco",
+      2,
+      true,
+      "Jack Russell"
+    );
+
+    m1.setNombre("Mina");
+    m1.setApodo("Mimiruli");
 
     System.out.println(
-      m1.nombre + " " + m1.apodo + " " + m1.tipo + " " + m2.color + " "
+      m1.getNombre() +
+      " " +
+      m1.getApodo() +
+      " " +
+      m1.getTipo() +
+      " " +
+      m2.getColor() +
+      " "
     );
-    //
-    //
-    // public String nombre;
-    // public String apodo;
-    // //Conejo, gato , perro, loro , etc
-    // public String tipo;
-    // public String color;
-    // public int edad;
-    // public boolean cola;
-    // public String raza;
+
+    m1.pasear(100);
+
+    System.out.println("-------------------------------------------");
+    System.out.println(m1);
+    System.out.println("-------------------------------------------");
+    System.out.println(m2);
+    System.out.println("-------------------------------------------");
+    System.out.println(m3);
+    System.out.println("-------------------------------------------");
   }
 }
