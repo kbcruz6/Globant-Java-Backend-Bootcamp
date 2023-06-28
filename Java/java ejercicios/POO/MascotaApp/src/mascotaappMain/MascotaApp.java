@@ -1,23 +1,14 @@
 package mascotaappMain;
 
 import mascotaappEntidades.Mascota;
+import mascotaappServicios.ServicioMascota;
 
 public class MascotaApp {
 
   public static void main(String[] args) throws Exception {
-    System.out.println("-------------");
-    System.out.println("Hello, World!");
-    System.out.println("-------------");
+    ServicioMascota sm = new ServicioMascota();
 
-    Mascota m1 = new Mascota(
-      "Jana",
-      "Janita",
-      "Perro",
-      "Marron",
-      8,
-      true,
-      "Caniche"
-    );
+    Mascota m1 = new Mascota("asd", "asd", "asd", "asd", 5, true, "Calleja");
 
     Mascota m2 = new Mascota(
       "Gaucho",
@@ -38,6 +29,8 @@ public class MascotaApp {
       "Jack Russell"
     );
 
+    Mascota m4 = sm.crearMascota();
+
     m1.setNombre("Mina");
     m1.setApodo("Mimiruli");
 
@@ -54,12 +47,13 @@ public class MascotaApp {
 
     m1.pasear(100);
 
-    System.out.println("-------------------------------------------");
+    System.out.println("------------------- M1 ---------------------");
     System.out.println(m1);
-    System.out.println("-------------------------------------------");
+    System.out.println("------------------- M2 ---------------------");
     System.out.println(m2);
-    System.out.println("-------------------------------------------");
+    System.out.println("------------------- M3 ---------------------");
     System.out.println(m3);
-    System.out.println("-------------------------------------------");
+    System.out.println("------------------- M4 ---------------------");
+    System.out.println(m4);
   }
 }
