@@ -17,9 +17,9 @@ public class Ej2 {
       "Para una circunferencia de radio: " +
       c1.getRadio() +
       ", el area es= " +
-      c1.area() +
+      se2.area(c1) +
       ", y el perimetro= " +
-      c1.perimetro()
+      se2.perimetro(c1)
     );
     System.out.println("");
 

@@ -15,12 +15,4 @@ public class Circunferencia {
   public double getRadio() {
     return this.radio;
   }
-
-  public double area() {
-    return this.radio * this.radio * Math.PI;
-  }
-
-  public double perimetro() {
-    return this.radio * 2 * Math.PI;
-  }
 }

@@ -13,4 +13,12 @@ public class ServicioEj2 {
 
     return new Circunferencia(r1);
   }
+
+  public double area(Circunferencia c1) {
+    return c1.getRadio() * c1.getRadio() * Math.PI;
+  }
+
+  public double perimetro(Circunferencia c1) {
+    return c1.getRadio() * 2 * Math.PI;
+  }
 }
