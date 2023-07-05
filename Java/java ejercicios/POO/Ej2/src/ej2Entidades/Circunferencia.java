@@ -8,11 +8,11 @@ public class Circunferencia {
     this.radio = radio;
   }
 
-  public void setRadio(double radio) {
-    this.radio = radio;
-  }
-
   public double getRadio() {
     return this.radio;
+  }
+
+  public void setRadio(double radio) {
+    this.radio = radio;
   }
 }
