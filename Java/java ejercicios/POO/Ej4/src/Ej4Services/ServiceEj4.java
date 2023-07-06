@@ -7,6 +7,7 @@ public class ServiceEj4 {
 
   private Scanner read = new Scanner(System.in);
 
+  //Create Rectangle
   public Rectangle createRectangle() {
     System.out.println("--------------------");
     System.out.println("Insert base:");
@@ -18,14 +19,17 @@ public class ServiceEj4 {
     return new Rectangle(base, high);
   }
 
+  //Calculate Surface
   public double surface(Rectangle r1) {
     return r1.getBase() * r1.getHigh();
   }
 
+  //Calculate Perimeter
   public double perimeter(Rectangle r1) {
     return (r1.getBase() + r1.getHigh()) * 2;
   }
 
+  //Draw Rectangle
   public void drawRectangle(Rectangle r1) {
     for (int j = 0; j < r1.getHigh(); j++) {
       for (int i = 0; i < r1.getBase(); i++) {
