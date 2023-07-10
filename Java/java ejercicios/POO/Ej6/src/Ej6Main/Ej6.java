@@ -9,5 +9,6 @@ public class Ej6 {
     Nespresso n1 = se6.crearCafetera();
     se6.llenarCafetera(n1);
     se6.servirTaza(n1);
+    se6.vaciarCafetera(n1);
   }
 }

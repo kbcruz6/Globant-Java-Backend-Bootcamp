@@ -63,4 +63,19 @@ public class ServiceEj6 {
       e.printStackTrace();
     }
   }
+
+  public void vaciarCafetera(Nespresso n1) {
+    System.out.println("Vaciando cafetera...");
+    try {
+      Thread.sleep(1500);
+      n1.setCantidadActual(0);
+      System.out.println("Cafetera vacia!");
+      System.out.println(
+        "Cantidad de cafe en la cafetera: " + n1.getCantidadActual() + " ml"
+      );
+      System.out.println("-------------------------------------------");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
 }
