@@ -78,4 +78,36 @@ public class ServiceEj6 {
       e.printStackTrace();
     }
   }
+
+  public void agregarCafe(Nespresso n1) {
+    System.out.println(
+      "La cafetera tiene " + n1.getCantidadActual() + " ml de cafe actualmente"
+    );
+    System.out.println("Cuanto cafe desea agregar?");
+    int cafe = read.nextInt();
+    System.out.println("-----------------------------------------");
+
+    if (cafe + n1.getCantidadActual() > n1.getCapacidadMaxima()) {
+      System.out.println(
+        "Cuidado, solo se agregaran " +
+        (n1.getCapacidadMaxima() - n1.getCantidadActual()) +
+        " ml como máximo, sino rebalsa."
+      );
+      System.out.println("Agregando dicho cafe...");
+      n1.setCantidadActual(n1.getCapacidadMaxima());
+    } else {
+      n1.setCantidadActual(n1.getCantidadActual() + cafe);
+      System.out.println("Agregando " + cafe + " ml de cafe...");
+    }
+    try {
+      Thread.sleep(1500);
+      System.out.println("Cafe agregado correctamente!");
+      System.out.println(
+        "Cantidad actual de cafe en la cafetera: " + n1.getCantidadActual()
+      );
+      System.out.println("-----------------------------------------");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
 }

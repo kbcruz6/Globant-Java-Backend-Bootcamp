@@ -10,5 +10,6 @@ public class Ej6 {
     se6.llenarCafetera(n1);
     se6.servirTaza(n1);
     se6.vaciarCafetera(n1);
+    se6.agregarCafe(n1);
   }
 }
