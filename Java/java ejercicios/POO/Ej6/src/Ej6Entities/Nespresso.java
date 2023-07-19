@@ -2,8 +2,7 @@ package Ej6Entities;
 
 public class Nespresso {
 
-  private int capacidadMaxima;
-  private int cantidadActual;
+  private int capacidadMaxima, cantidadActual;
 
   // Empty Constructor
   public Nespresso() {}
